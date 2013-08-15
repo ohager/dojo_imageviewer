@@ -9,7 +9,7 @@ class ApplicationArguments {
 
 private:
     IArgumentParser * _argumentParser;
-    std::map<std::string,std::string> _arguments;
+    mutable std::map<std::string,std::string> _arguments;
 public:
     ApplicationArguments(int argc, char ** args)
         : _argumentParser( new ArgumentParserDefault() )
@@ -17,7 +17,7 @@ public:
         _arguments =  _argumentParser->parse(argc, args);
     }
 
-    const std::string & getArgument(const std::string & key){
+    const std::string & getArgument(const std::string & key) const{
         return _arguments[key];
     }
 };

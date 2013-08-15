@@ -55,8 +55,6 @@ void TestImageViewer::testArgumentParser()
     argmap = parser.parse(4,args4);
     QCOMPARE(argmap["opt"], std::string(""));
     QCOMPARE(argmap["arg"], std::string("value"));
-
-
 }
 
 QTEST_APPLESS_MAIN(TestImageViewer)

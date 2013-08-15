@@ -1,11 +1,13 @@
 #include <iostream>
 #include <exception>
 #include "ApplicationController.h"
-#include "Application.h"
+#include <ApplicationArguments.h>
+#include <ImageViewerApplication.h>
 
 int main(int argc, char *argv[])
 {
-    ApplicationController applicationController(new Application(argc, argv));
+    IApplication * application = new ImageViewerApplication( ApplicationArguments(argc, argv) );
+    ApplicationController applicationController(application);
     try{
         applicationController.start();
     }

@@ -20,8 +20,8 @@ SOURCES += TestImageViewer.cpp \
     ../../src/ArgumentParserDefault.cpp \
     ../../src/ApplicationControllerBase.cpp \
     ../../src/ApplicationController.cpp \
-    ../../src/ApplicationBase.cpp \
-    ../../src/Application.cpp
+    ../../src/ApplicationBase.cpp
+
 DEFINES += SRCDIR=\\\"$$PWD/\\\"
 
 HEADERS += \
@@ -32,5 +32,4 @@ HEADERS += \
     ../../include/ApplicationControllerBase.h \
     ../../include/ApplicationController.h \
     ../../include/ApplicationBase.h \
-    ../../include/ApplicationArguments.h \
-    ../../include/Application.h
+    ../../include/ApplicationArguments.h
