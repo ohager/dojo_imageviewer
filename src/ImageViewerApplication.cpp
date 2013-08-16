@@ -1,4 +1,5 @@
 #include <stdexcept>
+#include <iostream>
 #include "ImageViewerApplication.h"
 #include "ImageReaderFactory.h"
 #include "ImageData.h"
@@ -24,6 +25,8 @@ void ImageViewerApplication::start()
     viewer.render();
 
     delete imageData;
+
+    std::cin.ignore();
 }
 
 

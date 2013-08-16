@@ -8,7 +8,4 @@ void ImageViewerImpl::render(const ImageData * imageData){
               << "Image Width: " << imageData->getWidth() << std::endl
               << "Image Bit Depth: " << imageData->getBitDepth() << std::endl << std::endl;
     std::cout << "Press <Enter> to close..." << std::endl;
-
-    std::string dummy;
-    std::cin >> dummy;
 }
