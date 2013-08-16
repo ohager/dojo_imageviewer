@@ -9,6 +9,7 @@ class ImageReaderPng : public IImageReader
 {
 public:
     ImageData * loadImage(const std::string & filename);
+
 };
 
 #endif // IMAGEREADERPNG_H
