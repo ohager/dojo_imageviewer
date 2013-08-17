@@ -26,8 +26,8 @@ public:
     }
 private:
     int _width, _height, _bitDepth;
-    long _dataLength;
     char * _data;
+    long _dataLength;
 };
 
 #endif // IIMAGE_H

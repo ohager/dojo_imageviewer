@@ -1,6 +1,6 @@
 #include "ImageReaderFactory.h"
 #include "ImageReaderPng.h"
-//#include "ImageReaderJpg.h"
+#include "ImageReaderBmp.h"
 #include <algorithm>
 #include <stdexcept>
 
@@ -12,8 +12,8 @@ IImageReader * ImageReaderFactory::createImageReader(const std::string & filesuf
     if(suffix == "PNG"){
         return new ImageReaderPng();
     }
-    else if(suffix == "JPG"){
-        return NULL;
+    else if(suffix == "BMP"){
+        return new ImageReaderBmp();
     }
     else{
         throw std::invalid_argument("Format '" + suffix + "' is not supported");

@@ -28,7 +28,8 @@ SOURCES += main.cpp \
     src/ImageReaderPng.cpp \
     src/ImageViewer.cpp \
     src/ImageViewerImpl.cpp \
-    include/ByteOrder.cpp
+    src/ByteOrder.cpp \
+    src/ImageReaderBmp.cpp
 
 HEADERS += \
     include/ApplicationController.h \
@@ -46,4 +47,5 @@ HEADERS += \
     include/ImageReaderPng.h \
     include/ImageViewer.h \
     include/ImageViewerImpl.h \
-    include/ByteOrder.h
+    include/ByteOrder.h \
+    include/ImageReaderBmp.h
